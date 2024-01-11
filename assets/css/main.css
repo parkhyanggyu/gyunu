@@ -1,0 +1,1363 @@
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    height:100vh;
+    width: 100vw;
+    font-family: 'THEJung140';
+    background: white;
+    font-size: 14px;
+    color: #585858;
+    overflow-x:hidden;
+}
+ul{
+   list-style:none;
+   padding-left:0px;
+   }
+
+@media all and (min-width: 1920px) {
+}
+
+container {
+    display: grid;
+    height:100%;
+    width: 100%;
+}
+.contents_box {
+    position:relative; 
+    width:100%; 
+    height:100%; 
+    background-color:transparent;}
+.bg.back_one {
+    background-color: #Fff;
+    transition:opacity 1s;
+    opacity:0;
+}
+.bg.back_two {
+    background-color: #F4EDDE;
+    transition:opacity 1s;
+    opacity:0;
+}
+.bg.active {opacity: 1;}
+
+
+/*첫페이지메인텍스트*/
+.title_main_text {
+    position: absolute;
+    top:35%; bottom:0; left:0 ;right:0; margin: 0 auto; 
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Metafiz-Bold';
+    color: #252D47;
+    font-size: 5em;
+    z-index: 1;
+}
+.title_main_text span{
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #252D47;
+    font-size: 1.8em;
+    z-index: 1;
+}
+/*스크롤*/
+.scroll_icon {
+    position: absolute;
+    width:5%;
+    height: 8.5%;
+    top:61%; bottom:0; left:0 ;right:0; margin: 0 auto; 
+    animation: motion 1.6s linear 0s 3; margin-top: 0;
+}
+.scroll_icon_img {
+    max-width: 100%;
+    height: auto !important;
+}
+@keyframes motion {
+	0% {margin-top: 0px;}
+	20% {margin-top: 10px;}
+	40% {margin-top: 0px;}
+	60% {margin-top: 10px;}
+	80% {margin-top: 0px;}
+	100% {margin-top: 0px;}
+}
+-webkit-@keyframes motion {
+	0% {margin-top: 0px;}
+	20% {margin-top: 10px;}
+	40% {margin-top: 0px;}
+	60% {margin-top: 10px;}
+	80% {margin-top: 0px;}
+	100% {margin-top: 0px;}
+}
+
+/*첫페이지 배경*/
+.first_page {
+    width: 100%;
+    height:1080px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_bakground {
+    background-color: #F4EDDE;
+    width:22%;
+    height: 48.5%;
+    border-radius: 700px 700px 0 0;
+    border:none;
+}
+/*두번째페이지*/
+.second_page {
+    width: 100%;
+    height:1080px;
+    /*background-color: #F4EDDE;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.second_img_box {
+    width:22%;
+    height: 52%;
+    position: relative;
+}
+/*두번째페이지 겹치는 이미지*/
+.introduction_img_back {
+    max-width: 100%;
+    height: auto !important;
+}
+.introduction_img_me {
+    max-width: 53%;
+    height: auto !important;
+    position: absolute;
+    top:24%; bottom:0; left:0 ;right:0; margin: 0 auto; 
+}
+.introduction_img_flower {
+    max-width: 60%;
+    height: auto !important;
+    position: absolute;
+    top:0; bottom:0; left:0 ;right:-30%; margin: 0 auto;
+}
+.introduction_text_small {
+    -webkit-transform:rotate(-90deg);
+    -webkit-transform-origin:left top;
+    position: absolute;
+    top:93%;
+    bottom: 0;
+    right:0;
+    left: -12%;
+    
+}
+/*두번째페이지 큰 텍스트*/
+.introduction_text_medium, .introduction_text_big {
+    position: absolute;
+    font-family: 'Metafiz-Bold';
+    color: #252D47;
+}
+.introduction_text_medium {
+    font-size: 3.5em;
+    text-align: center;
+    top:28%; left: 0; right: 0; bottom: 0; margin: 0 auto;
+}
+.introduction_text_big {
+    font-size: 6em;
+    text-align: center;
+    top:; left: 0; right: 0; bottom:24%; margin: 0 auto;
+}
+/*세번째페이지*/
+.third_page {
+    width: 100%;
+    height: 1080px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+/*스펙 차트*/
+.spec_chart {
+    background-color: #F4EDDE;
+    position: relative;
+    display: grid;
+    grid-template-rows: 30% 1fr;
+}
+.spec_chart_text {
+    font-family: 'Metafiz-Bold';
+    color: white;
+    font-size: 6em;
+    position: absolute;
+    top:10%;
+    right:15%;
+}
+.spec_chart_text_box {
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+.spec_chart_box {
+    display: flex;
+    justify-content: center;
+}
+.spec_chart_box_center {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.spec_chart_progress_area {
+    width: 16.66%;
+    height:100%;
+    display: flex;
+    position: relative;
+}
+.spec_skill_chart {
+    animation: progressbar 2s ease-out;
+      -webkit-appearance: none;
+    transform: rotate(-90deg);
+    height:30%;
+    width: 170%;
+    position: absolute;
+    bottom: 0%;
+    left:77%;
+    transform-origin: left bottom;
+    margin-right:-30%
+    }
+    ::-webkit-progress-bar {
+      background-color: transparent;
+    }
+    ::-webkit-progress-value {
+      background-color: white;
+    } 
+.spec_chart_progress_area p {
+    font-family: 'Metafiz-Regular';
+    color: #252D46;
+    font-size: 2.2em;
+    text-align: center;
+    position: absolute;
+    top:83%; left: 0; right: 0; bottom: 0; margin: 0 auto;
+}
+/*프로그래스 바 애니메이션*/
+@keyframes progressbar { 
+  0%  { 
+    width: 0%;
+  } 
+  100% { 
+    width: 170%;
+  }  
+}
+/*스펙 텍스트*/
+.spec_text {
+    display: flex;
+    justify-content: center;
+    
+}
+.spec_text_box_center {
+    display: grid;
+    width: 60%;
+    grid-template-columns: 1fr 1fr;
+    padding: 3% 5%;
+}
+.spec_text_activity, .spec_text_license {
+    font-family: 'Metafiz-Regular';
+    color: #252D46;
+    font-size: 2.6em;
+}
+.spec_text_activity_area {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 30% 1fr;
+    padding-top: 5%;
+    line-height: 3.2em;
+}
+.spec_text_license_line {
+    padding-left: 7%;
+}
+.spec_text_license_area {
+    padding-top: 5%;
+    line-height: 3.2em;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 30% 1fr;
+}
+/*네번째 페이지 코레일 간지*/
+.slip_sheet {
+    width: 100%;
+    height:1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.fourth_page {
+    background-color: #DFEBF4;
+}
+.slip_sheet_back  {
+     width:20%;
+    height: 46%;
+    border-radius: 700px 700px 0 0;
+    border:none;
+}
+.fourth_title_bakground {
+    background-color: #C9D8E3;
+}
+.fourth_title_main_text span {
+    color: #1966AB;
+    font-size: 1em; 
+}
+.slip_sheet_number {
+    font-size: 12em;
+    position: absolute;
+    top:33%; bottom:0; left:0 ;right:0; margin: 0 auto; 
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Metafiz-Bold';
+    line-height:1.1em;
+    color: transparent;
+}
+.fourth_title_main_text{ 
+    -webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #1966AB;
+}
+/*다섯번째 왼쪽 페이지 코레일 소개*/
+.fifth_page{
+    width: 100%;
+    height:1080px;
+    background-color: #DFEBF4;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+}
+.korail_introduction_left_area{
+    position: relative;
+    width: 100%;
+    height:1080px;
+}
+.korail_introduction_right_area{
+    position: relative;
+    width: 100%;
+    height:1080px;
+    display: grid;
+    grid-template-rows:25% 17% 13% 45%;
+}
+.korail_map_back{
+    position: absolute;
+    max-width: 120%;
+    height: auto !important;
+    top:-5%; bottom:0; left:-40% ;right:0; margin: 0 auto; 
+    
+}
+.korail_phone_first {
+    position: absolute;
+    max-width: 100%;
+    height: auto !important;
+    top:14%; bottom:0; left:22%;right:0; margin: 0 auto; 
+}
+/*다섯번째 오른쪽 페이지*/
+.korail_logo_box {
+    display: flex;
+    align-items: flex-end;
+}
+.korail_logo_img{
+    width: 32%;
+    height: auto !important;
+}
+.korail_icon_box {
+    padding-top:5%;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #fff;
+}
+.korail_icon_first {
+    width: 12%;
+    height: auto !important;
+    padding-right:2%;
+}
+.korail_icon_second {
+    width: 12%;
+    height: auto !important;
+}
+.korail_introduction_title {
+    display: flex;
+    align-items: center;
+}
+.korail_introduction_title p{
+    color:#0055A2;
+    font-size: 2.3em;
+    font-family: 'THEJung170';
+    padding-top: 3%;
+}
+.korail_introduction_text {
+    width: 40%;
+    word-break: keep-all;
+    color: #363636;
+    line-height: 2em;
+    padding-top: 1%;
+}
+/*여섯번째 왼쪽페이지 앱*/
+.sixth_page{
+    width: 100%;
+    height:1080px;
+    background-color: #DFEBF4;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+}
+.korail_app_left_area {
+    position: relative;
+    width: 100%;
+    height:1080px;
+}
+.left_white_phone_back {
+    background-color: white;
+    width: 100%;
+    height:100%;
+    border: none;
+    border-radius: 0px 700px 700px 0px;
+}
+.korail_app_phone_box {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    position: relative;
+}
+.korail_app_vertical_title {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 18%;
+    margin-top: 30%;
+}
+.korail_app_vertical_title p{
+    -webkit-transform:rotate(-90deg);
+    -webkit-transform-origin:right top;
+    position: absolute;
+    font-family: 'Metafiz-Bold';
+    font-size:4.4em;
+    color:#0055A2;
+}
+.korail_app_img_back{
+    position: relative;
+    background-image:url(../img/korail_phone_2@2x.png);
+    width: 86.5%;
+    height : 100%;
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 10%;
+}
+.korail_app_video_box{
+    position: relative;  
+    overflow: hidden; 
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: -10%;
+    margin-left: -3.2%;
+    border: none;
+    border-radius: 50px;
+}
+.korail_app_video {
+    
+}
+.korail_app_video_cover {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto !important;
+    top:8.5%;
+    left: 4%;
+}
+/*여섯번째 오른쪽페이지*/
+.korail_app_right_area {
+    position: relative;
+    width: 100%;
+    height:1080px;
+    display: grid;
+    grid-template-rows:44% 8% 18% 8% 22%;
+    padding-left: 5%;
+}
+.korail_app_title{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 3%;
+}
+.korail_app_title p{
+    font-size:2.3em;
+    color:#0055A2;
+    font-family: 'THEJung170';
+}
+.korail_app_concept_title {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+.korail_app_concept_title p {
+    font-family: 'Metafiz-Regular';
+    font-size:2.5em;
+    color:#0055A2;
+}
+.korail_app_concept_box {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+.korail_app_concept_box img {
+    max-width: 100%;
+    height: auto !important;
+}
+/*일곱번째 페이지 앱 상세*/
+.seventh_page {
+    width: 100%;
+    height:1080px;
+    background-color: #DFEBF4;
+    position: relative;
+}
+.korail_app_page1 {
+    position: absolute;
+    top:0;
+    left:-3%;
+    max-width: 100%;
+    height: auto !important;
+}
+.korail_app_page2 {
+    position: absolute;
+    bottom:0;
+    right:-3%;
+    max-width: 100%;
+    height: auto !important;
+}
+.korail_app_page_title {
+    font-size:2.3em;
+    line-height: 1.5em;
+    color:#0055A2;
+    font-family: 'THEJung170';
+    text-align: center;
+    position: absolute;
+    top:50%; left: 0; right: 0; bottom: 0; margin: 0 auto;
+}
+.korail_app_page_title span {
+    border-bottom: 1px solid #fff;
+}
+/*여덟번째 키오스크 왼쪽*/
+.eighth_page {
+    width: 100%;
+    height:1080px;
+    background-color: #DFEBF4;
+    position: relative;
+    display: grid;
+    grid-template-columns: 52% 1fr;
+}
+.left_white_kiosk_back {
+    background-color: white;
+    width: 100%;
+    height:100%;
+    border: none;
+    border-radius: 0px 500px 0 0px;
+    position: relative;
+}
+.left_kiosk_img {
+    position: absolute;
+    bottom: 0;
+    right:10%;
+    max-width: 100%;
+    height: auto !important;
+}
+/*여덟번째 키오스크 오른쪽*/
+.right_kiosk_area {
+    display: grid;
+    grid-template-rows:55% 13% 32%;
+    padding-left: 10%;
+}
+.right_kiosk_title {
+    color: #C9D8E3;
+    font-family: 'Metafiz-Bold';
+    font-size:11em;
+    display: flex;
+    align-items: flex-end;
+    line-height: 1em;
+}
+.kiosk_medium_title {
+    color:#1966AB;
+    font-family: 'THEJung170';
+    font-size: 2.3em;
+    line-height: 1.5em;
+    display: flex;
+    align-items: center;
+}
+.kiosk_small_text {
+    width: 50%;
+    word-break: keep-all;
+    color: #363636;
+    line-height: 2em;
+}
+/*아홉번째 페이지 키오스크 상세*/
+.ninth_page {
+    width: 100%;
+    height:1080px;
+    background-color: #fff;
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+.korail_half_back {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 77%;
+    background-color: #DFEBF4;
+}
+.left_kiosk_page_area {
+    width: 100%;
+    height:1080px;
+    position: relative;
+}
+.left_kiosk_page_area img {
+    position: absolute;
+    left:-60%;
+    bottom: -10%;
+    max-width: 200%;
+    height: auto !important;
+}
+.right_kiosk_page_area {
+    display: grid;
+    grid-template-rows: 40% 10% 50%;
+    z-index: 1;
+}
+.right_kiosk_page1 {
+    color:#1966AB;
+    font-family: 'THEJung170';
+    font-size: 2.3em;
+    line-height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: column;
+}
+.right_kiosk_page1 div {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 3%;
+}
+.right_kiosk_page2 {
+    width: 100%;
+    color: #363636;
+    line-height: 2em;
+    text-align: center;
+    display: flex;
+    padding-top: 3%;
+    justify-content: center;
+}
+.right_kiosk_page2 p {
+    width: 35%;
+    word-break: keep-all;
+}
+.right_kiosk_page3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.right_kiosk_page3 div {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 2%;
+}
+.right_kiosk_page3 img {
+    max-width: 100%;
+    height: auto !important;
+}
+/*열번째 페이지 캐릭터 소개*/
+.tenth_page {
+    width: 100%;
+    height:1080px;
+    background-color: #fff;
+    position: relative;
+    display: grid;
+    grid-template-rows: 60% 1fr;
+}
+.left_character_area {
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left_character_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30%;
+}
+.character_text_box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.character_medium_title {
+    color:#1966AB;
+    font-family: 'Metafiz-Bold';
+    font-size: 3.8em;
+    line-height: 1.5em;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3%;
+}
+.character_small_text {
+    width: 50%;
+    word-break: keep-all;
+    color: #363636;
+    line-height: 2em;
+}
+.bottom_character_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6%;
+}
+/*열한번째 페이지 굿즈*/
+.eleventh_page{
+    width: 100%;
+    height:2160px;
+    background-color: #DFEBF4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.goods_back {
+    background-color: #fff;
+    width:60%;
+    height: 80%;;
+    border-radius: 700px 700px 0 0;
+    border:none;
+    display: flex;
+}
+.eleventh_page p{
+    color:#1966AB;
+    font-family: 'Metafiz-Bold';
+    font-size: 3.8em;
+    position: absolute;
+    top:12%;
+    left:28%;
+    z-index: 1;
+}
+.eleventh_page img {
+    max-width: 100%;
+    height: auto !important;
+}
+.korail_goods1 {
+    position: absolute;
+    top:7%;
+    right:20%;
+}
+.korail_goods2 {
+    position: absolute;
+    top:18%;
+    left:18%;
+}
+.korail_goods3 {
+    position: absolute;
+    top:28%;
+    right:23%;
+}
+.korail_goods4 {
+    position: absolute;
+    bottom:32%;
+    left:26%;
+}
+.korail_goods5 {
+    position: absolute;
+    bottom:5%;
+    left:17%;
+}
+.korail_goods6 {
+    position: absolute;
+    bottom:9%;
+    right:12%;
+}
+/*열두번째 페이지 한전 간지*/
+.twelfth_page {
+    background-color: #312D39;
+}
+.twelfth_title_bakground {
+    background-color: #4E4760;
+}
+.twelfth_title_main_text span {
+    color: #7E6BBF;
+    font-size: 1em; 
+}
+.twelfth_title_main_text{ 
+    -webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #7E6BBF;
+}
+/*열세번째 페이지*/
+.thirteenth_page {
+     width: 100%;
+    height:1080px;
+    background-color: #312D39;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+}
+.kepri_electric_back {
+    position:absolute;
+    max-width: 100%;
+    height: auto !important;
+    top:-10%;   
+}
+.kepri_left_area {
+    position: relative;
+    width: 100%;
+    height:1080px;
+}
+.kepri_web_img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left:7%;
+}
+.kepri_right_area {
+     position: relative;
+    width: 100%;
+    height:1080px;
+    display: grid;
+    grid-template-rows:40% 10% 50%;
+    padding-left: 5%;
+}
+.kepri_web_logo {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3%;
+}
+.kepri_web_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+.kepri_web_title p{
+    color:#7E6BBF;
+    font-size: 2.3em;
+    font-family: 'THEJung170';
+}
+.kepri_web_text {
+    width: 50%;
+    word-break: keep-all;
+    color: #fff;
+    line-height: 2em;
+    padding-top: 1%;
+}
+/*열네번째 페이지*/
+.fourteenth_page {
+     width: 100%;
+    height:1080px;
+    background-color: #CBCBD5;
+    display: grid;
+    position: relative;
+}
+.kepri_previous_web{
+    max-width: 100%;
+    height: auto !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.kepri_previous_text {
+    display: grid;
+    grid-auto-rows: 5% 17% 78%;
+    position: absolute;
+    top:38%; left: 0; right: 0; bottom: 0; margin: 0 auto;
+    text-align: center;
+}
+.kepri_previous_title p{
+    font-size:2.3em;
+    line-height: 1.5em;
+    color:#312D39;
+    font-family: 'THEJung170';
+}
+.kepri_previous_small_text {
+    display: flex;
+    justify-content: center;
+}
+.kepri_previous_small_text p{
+    width: 50%;
+    word-break: keep-all;
+    color: #363636;
+    line-height: 2em;
+    
+}
+.kepri_previous_text div span {
+    border-top: 1px solid #fff;
+}
+/*열다섯번째 페이지*/
+.fifteenth_page {
+     width: 100%;
+    height:1080px;
+    background-color: #312D39;
+    display: grid;
+    position: relative;
+    grid-template-rows: 70% 30%;
+}
+.kepri_main_web {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kepri_main_web_img {
+    max-width: 100%;
+    height: auto !important;
+}
+.kepri_main_web p {
+    -webkit-transform:rotate(-90deg);
+    -webkit-transform-origin:right top;
+    position: absolute;
+    font-family: 'Metafiz-Bold';
+    font-size:4.4em;
+    color:#4E4760;
+    left: -2%;
+    bottom: 72%;
+}
+.kepri_page_box {
+    width: 45.5%;
+    height: 70%;
+    overflow-y: hidden;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    top:11%;
+}
+.kepri_page_img{
+    transform-origin: left top;
+    margin-top: -2.3%;
+}
+.kepri_web_bottom_area {
+    width: 60%;
+    display: grid;
+    grid-template-rows: 20% 1fr; 
+    margin: 0 auto;
+}
+.kepri_concept {
+    display:flex;
+    font-family: 'Metafiz-Regular';
+    font-size:2.5em;
+    color:#7E6BBF;
+}
+.kepri_concept p:nth-child(1){
+    flex-grow: 1.5;
+}
+.kepri_concept p:nth-child(2){
+    flex-grow: 1.5;
+}
+.kepri_concept p:nth-child(3){
+    flex-grow: 1.2;
+}
+.kepri_concept p:nth-child(4){
+    flex-grow: 0.5;
+}
+
+.kepri_concept_img {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto !important;
+}
+/*열여섯번째 페이지*/
+.sixteenth_page {
+     width: 100%;
+    height:1080px;
+    background-color: #312D39;
+    display: grid;
+    position: relative; 
+    grid-template-rows: 40% 15% 45%;
+}
+.kepri_sub_page_top {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    max-width: 100%;
+    height: auto !important;
+}
+.kepri_sub_page_top div:first-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:5%;
+}
+.kepri_sub_page_top div:last-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.kepri_sub_page_middle p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.kepri_sub_page_middle p:first-child {
+    color:#7E6BBF;
+    font-size: 2.3em;
+    font-family: 'THEJung170';
+}
+.kepri_sub_page_middle p:last-child {
+    word-break: keep-all;
+    color: #fff;
+    line-height: 2em;
+    padding-top: 1%;
+}
+.kepri_sub_page_bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 100%;
+    height: auto !important;
+}
+.kepri_sub_page_bottom div:first-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:5%;
+}
+.kepri_sub_page_bottom div:last-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*열여덟번째 페이지*/
+.eighteenth_page {
+    width: 100%;
+    height:1080px;
+    background-color: #312D39;
+    display: grid;
+    position: relative;
+    grid-template-columns: 25% 50% 25%;
+}
+.left_icon_title {
+    color: #4E4760;
+    font-family: 'Metafiz-Bold';
+    font-size:11em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding-top:10%;
+
+}
+.kepri_right_icon_area {
+    display: grid;
+    grid-template-rows: 95% 5%;
+}
+.right_icon_title {
+    color: #4E4760;
+    font-family: 'Metafiz-Bold';
+    font-size:11em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+.kepri_center_icon_area  {
+    display: flex;
+    justify-content: center;
+}
+.kepri_center_back {
+    position: absolute;
+    margin: 0 auto;
+    top:5%;
+    max-width: 100%;
+    height: auto !important;
+}
+.kepri_center_icon {
+    position: absolute;
+    margin: 0 auto;
+    top:30%;
+    max-width: 100%;
+    height: auto !important;
+}
+.kepri_center_icon_area span {
+    border-top: 1px solid #fff;
+}
+.kepri_center_title {
+    color: #7E6BBF;
+     font-size:2.3em;
+    line-height: 1.5em;
+    font-family: 'THEJung170';
+    text-align: center;
+    padding-top: 12%;
+}
+/*열홉번째 페이지 수자원 간지*/
+.nineteenth_page {
+    background-color: #282D3E;
+}
+.nineteenth_title_bakground {
+    background-color: #333B57;
+}
+.nineteenth_title_main_text span {
+    color: #6ED8EB;
+    font-size: 1em; 
+}
+.nineteenth_title_main_text{ 
+    -webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #6ED8EB;
+}
+/*스무번째 페이지*/
+.twentieth_page {
+     width: 100%;
+    height:1080px;
+    background-color: #282D3E;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+}
+.kwater_building_back {
+    position:absolute;
+    max-width: 100%;
+    height: auto !important;
+    top:5%;   
+    left:-28%;
+
+}
+.kwater_left_area {
+    position: relative;
+    width: 100%;
+    height:1080px;
+}
+.kwater_web_img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left:7%;
+}
+.kwater_right_area {
+     position: relative;
+    width: 100%;
+    height:1080px;
+    display: grid;
+    grid-template-rows:40% 10% 50%;
+    padding-left: 5%;
+}
+.kwater_web_logo {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3%;
+}
+.kwater_web_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+.kwater_web_title p{
+    color:#6ED8EB;
+    font-size: 2.3em;
+    font-family: 'THEJung170';
+}
+.kwater_web_text {
+    width: 50%;
+    word-break: keep-all;
+    color: #fff;
+    line-height: 2em;
+    padding-top: 1%;
+}
+/*스물한번째 페이지*/
+.twenty_first_page {
+    width: 100%;
+    height:1080px;
+    background-color: #E4E5EA;
+    display: grid;
+    position: relative;
+    grid-template-columns: 25% 50% 25%;
+}
+.kwater_left_previous_title {
+    color: #C2C4CB;
+    font-family: 'Metafiz-Bold';
+    font-size:11em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding-top:10%;
+
+}
+.kwater_right_previous_area {
+    display: grid;
+    grid-template-rows: 95% 5%;
+}
+.kwater_right_previous_title {
+    color: #C2C4CB;
+    font-family: 'Metafiz-Bold';
+    font-size:11em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+.kwater_center_previous_area  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kwater_center_back {
+    max-width: 100%;
+    height: auto !important;
+}
+.kepri_center_icon {
+    position: absolute;
+    margin: 0 auto;
+    top:30%;
+    max-width: 100%;
+    height: auto !important;
+}
+/*스물두번째 페이지*/
+.twenty_second_page {
+    width: 100%;
+    height:1080px;
+    background-color: #282D3E;
+    display: grid;
+    position: relative;
+}
+.kwater_web_draft_back {
+    position: absolute;
+    top:7%;
+    left:5%;
+    max-width: 100%;
+    height: auto !important;
+}
+.kwater_web_draft_text {
+    position: absolute;
+    top: 23%;
+    left:40%;
+    width: 100%;
+}
+.kwater_web_draft_title{
+    color:#6ED8EB;
+    font-size: 2.3em;
+    font-family: 'THEJung170';
+}
+.kwater_web_draft_sub_text {
+    width: 40%;
+    word-break: keep-all;
+    color: #fff;
+    line-height: 2em;
+    padding-top: 1%;
+}
+.kwater_web_draft_img {
+    max-width: 100%;
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 7%;
+    z-index: 1;
+}
+/*스물세번째 페이지*/
+.twenty-third_page {
+     width: 100%;
+    height:1080px;
+    background-color: #282D3E;
+    display: grid;
+    position: relative;
+    grid-template-rows: 40% 60%;
+}
+.kwater_web_bottom_area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kwater_main_web_img {
+    max-width: 100%;
+    height: auto !important;
+}
+.kwater_web_bottom_area p {
+    -webkit-transform:rotate(-90deg);
+    -webkit-transform-origin:right top;
+    position: absolute;
+    font-family: 'Metafiz-Bold';
+    font-size:4.4em;
+    color:#333B57;
+    left: -2%;
+    bottom: 72%;
+}
+.kwater_page_box {
+    width: 55%;
+    height: 91%;
+    overflow-y: hidden;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    top:-3%;
+}
+.kwater_page_img{
+    transform-origin: left top;
+}
+.kwater_main_web {
+    width: 60%;
+    display: grid;
+    grid-template-rows: 30% 1fr; 
+    margin: 0 auto;
+}
+.kwater_concept {
+    display:flex;
+    font-family: 'Metafiz-Regular';
+    font-size:2.5em;
+    color:#6ED8EB;
+    align-items: flex-end;
+    
+}
+.kwater_concept p:nth-child(1){
+    flex-grow: 1.5;
+}
+.kwater_concept p:nth-child(2){
+    flex-grow: 1.5;
+}
+.kwater_concept p:nth-child(3){
+    flex-grow: 1.2;
+}
+.kwater_concept p:nth-child(4){
+    flex-grow: 0.5;
+}
+
+.kwater_concept_img {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    max-width: 100%;
+    height: auto !important;
+}
+/*스물네번째 페이지*/
+.twenty-fourth_page {
+    width: 100%;
+    height:1080px;
+    background-color: #282D3E;
+    display: grid;
+    position: relative;
+}
+.kwater_icon_back_img {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 100%;
+    height: auto !important;
+}
+.kwater_icon_title {
+    color:#6ED8EB;
+    font-family: 'Metafiz-Bold';
+    font-size: 3.8em;
+    position: absolute;
+    top:18%;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.kwater_hologram_img {
+    position: absolute;
+    top:30%;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+@font-face{ 
+  font-family:'THEJung140';
+  src:url('../fonts/THEJung140.eot');
+  src:url('../fonts/THEJung140.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/THEJung140.woff') format('woff'),
+  url('../fonts/THEJung140.ttf') format('truetype'),
+  url('../fonts/THEJung140.svg') format('svg');
+  font-weight: 200;
+}
+@font-face{ 
+  font-family:'THEJung170';
+  src:url('../fonts/THEJung170.eot');
+  src:url('../fonts/THEJung170.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/THEJung170.woff') format('woff'),
+  url('../fonts/THEJung170.ttf') format('truetype'),
+  url('../fonts/THEJung170.svg') format('svg');
+  font-weight: 500;
+}
+@font-face{ 
+  font-family:'Metafiz-Regular';
+  src:url('../fonts/Metafiz-Regular.eot');
+  src:url('../fonts/Metafiz-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Metafiz-Regular.woff') format('woff'),
+  url('../fonts/Metafiz-Regular.ttf') format('truetype'),
+  url('../fonts/Metafiz-Regular.svg') format('svg');
+  font-weight: 200;
+}
+@font-face{ 
+  font-family:'Metafiz-Bold';
+  src:url('../fonts/Metafiz-Bold.eot');
+  src:url('../fonts/Metafiz-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Metafiz-Bold.woff') format('woff'),
+  url('../fonts/Metafiz-Bold.ttf') format('truetype'),
+  url('../fonts/Metafiz-Bold.svg') format('svg');
+  font-weight: 500;
+}
